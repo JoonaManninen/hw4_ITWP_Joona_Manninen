@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TV Show Searcher</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+		<link rel="stylesheet" href="src/styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">TV Show Searcher</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <form class="d-flex" id="search-form">
+            <input
+              type="text"
+              class="form-control me-2"
+              id="input-show"
+              placeholder="Enter a TV show name"
+              required
+            />
+            <button type="submit" class="btn btn-primary" id="submit-data">
+              Search
+            </button>
+          </form>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div id="show-results"></div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</
